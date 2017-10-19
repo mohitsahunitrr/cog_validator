@@ -49,7 +49,7 @@
     			<!-- YOUR LOGO HERE -->
     			<div class="inner-header">
     				<a class="inner-brand" href="/html">
-    					<img class="brand-light" src="/static/images/radiant_logo.png" width="170" alt="">
+    					<img class="brand-light" src="/static/images/radiant_logo_2.png" width="170" alt="">
     					<img class="brand-dark" src="/static/images/radiant_logo_2.png" width="170" alt="">
     				</a>
     			</div>
@@ -81,23 +81,40 @@
     	</header>
     	<!-- END HEADER -->
 
-  <!-- this is the start of script -->
-  <h1>Cloud optimized GeoTIFF validator: result</h1>
+      <!-- WRAPPER -->
+      <div class="wrapper">
 
-  <p><b>{{ global_result}}</b></p>
+      <!-- FORM POST -->
+  		<section class="module">
+  			<div class="container">
+          <div class="row">
+            <!-- FORM CONTENT -->
+            <div class="col-sm-12 blog-content">
 
-  {% if errors %}
-    <p>Errors:</p>
-    <ul>
-    {% for error in errors %}
-        <li>{{ error }}</li>
-    {% endfor %}
-    </ul>
-  {% endif %}
+              <!-- this is the start of script -->
+              <h1>Cloud optimized GeoTIFF validator: result</h1>
 
-  <p><a href="{{ root_url }}/html">Return to submit page</a></p>
+              <p><b>{{ global_result}}</b></p>
 
-  <!-- this is the end of script -->
+              {% if errors %}
+              <div class="alert alert-danger">
+                <p>Errors:</p>
+                <ul>
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+
+              <p><a href="{{ root_url }}/html">Return to submit page</a></p>
+
+              <!-- this is the end of script -->
+        </div>
+    </div>
+  </div>
+</section>
+<!-- END FORM POST -->
 
   <!-- SUBSCRIBE -->
   <section id="buy" class="module bg-white-dark">
