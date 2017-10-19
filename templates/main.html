@@ -117,8 +117,9 @@
               <h1>Cloud optimized GeoTIFF validator</h1>
 
               <p>This service enables you to check that a GeoTIFF file follows the
-		      <a href="https://trac.osgeo.org/gdal/wiki/CloudOptimizedGeoTIFF">specification</a> of
-              <a href="http://cogeo.org">Cloud Optimized GeoTIFF</a>.  
+              specification of
+              <a href="https://trac.osgeo.org/gdal/wiki/CloudOptimizedGeoTIFF">
+              Cloud optimized GeoTIFF</a>
               </p>
 
               <p>Files should generally be specified by URLs since it will enable the service
@@ -126,7 +127,8 @@
               will speed-up the checking process itself since only IFDs will be downloaded.</p>
 
               <p>In the case no public URL is available, the file content can be posted to
-              the service, with a 6 MB limit</p>
+              the service, with a 4 MB limit when the service is hosted as a AWS Lambda
+              function.</p>
 
               <form id="fileuploadform" action="{{ root_url }}/html/validate" method="post">
                File URL: <input onInput="urlModified()" id="url" type="string" name="url" style="width:800px;"/> <br />
@@ -180,9 +182,6 @@
                <br /><br />
                <p>You can also use the API at {{ root_url }}/api/validate that will return the validation result as a JSon document</p>
                <p>To submit a file by URL: curl -s "{{ root_url }}/api/validate?url=http://path/to/my.tif"</p>
-               <p>The code to run this service was built by <a href="http://www.spatialys.com/en/about/">Even Rouault</a> with support from <a href="http://planet.com">Planet</a>, 
-               and available in his <a href="https://github.com/rouault/cog_validator">github repo</a>. It is provided as a service by Radiant.Earth</P
-						
             <!-- this is the end of script -->
 
             </div>
