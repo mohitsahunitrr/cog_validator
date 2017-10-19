@@ -127,7 +127,7 @@
               will speed-up the checking process itself since only IFDs will be downloaded.</p>
 
               <p>In the case no public URL is available, the file content can be posted to
-              the service, with a 4 MB limit when the service is hosted as a AWS Lambda
+              the service, with a 6 MB limit when the service is hosted as a AWS Lambda
               function.</p>
 
               <form id="fileuploadform" action="{{ root_url }}/html/validate" method="post">
@@ -182,6 +182,9 @@
                <br /><br />
                <p>You can also use the API at {{ root_url }}/api/validate that will return the validation result as a JSon document</p>
                <p>To submit a file by URL: curl -s "{{ root_url }}/api/validate?url=http://path/to/my.tif"</p>
+               <p>The code to run this service was built by <a href="http://www.spatialys.com/en/about/">Even Rouault</a> with support from <a href="http://planet.com">Planet</a>,
++               and original code available in this <a href="https://github.com/rouault/cog_validator">github repo</a> and the service is running this <a href="https://github.com/radiantearth/cog_validator">github repo</a>.
+                The web service and hosting is provided by Radiant.Earth</p>
             <!-- this is the end of script -->
 
             </div>
