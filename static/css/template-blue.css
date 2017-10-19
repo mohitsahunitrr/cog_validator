@@ -3208,7 +3208,8 @@ body.off-canvas-cart-open:after {
     .header.header-transparent .inner-nav > li.submenu-open > a,
     .header.header-transparent .menu-extras .menu-item a:hover,
     .header.header-transparent .menu-extras .menu-item a:focus {
-        color: rgba(255, 255, 255, 0.7);
+        /*color: rgba(255, 255, 255, 0.7);*/
+        color: rgba(153, 153, 153, 0.7);
     }
 }
 
