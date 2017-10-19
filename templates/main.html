@@ -85,7 +85,8 @@
     	<div class="wrapper">
 
     		<!-- PAGE TITLE -->
-    		<section class="module-sm bg-white-dark">
+    		<!--
+        <section class="module-sm bg-white-dark">
     			<div class="container">
 
     				<div class="row">
@@ -101,16 +102,16 @@
 
     			</div>
     		</section>
+        -->
     		<!-- END PAGE TITLE -->
 
         <!-- BLOG POST -->
   		<section class="module">
   			<div class="container">
-
-  				<div class="row">
+          <div class="row">
 
   					<!-- BLOG CONTENT -->
-  					<div class="col-sm-10 col-sm-offset-1 blog-content">
+  					<div class="col-sm-12 blog-content">
 
             <!-- this is the start of script -->
               <h1>Cloud optimized GeoTIFF validator</h1>
@@ -178,13 +179,13 @@
                 }
                </script>
 
-               <br/><br/>
+               <br /><br />
                <p>You can also use the API at {{ root_url }}/api/validate that will return the validation result as a JSon document</p>
                <p>To submit a file by URL: curl -s "{{ root_url }}/api/validate?url=http://path/to/my.tif"</p>
             <!-- this is the end of script -->
 
             </div>
-          </div>
+
         </div>
       </div>
     </section>
