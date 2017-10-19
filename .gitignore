@@ -1,3 +1,5 @@
+tmp/
+tmp/*
 cog.log
 venv/*
 *.pyc
