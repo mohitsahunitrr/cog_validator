@@ -3197,7 +3197,8 @@ body.off-canvas-cart-open:after {
 
     .header.header-transparent .inner-nav > li > a,
     .header.header-transparent .menu-extras .menu-item a {
-        color: #ffffff;
+        /*color: #ffffff;*/
+        color: #999;
     }
 
     .header.header-transparent .inner-nav > li > a:hover,
